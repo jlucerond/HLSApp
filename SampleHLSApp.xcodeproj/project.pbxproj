@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D82D7983226CF4E50058B235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D7982226CF4E50058B235 /* AppDelegate.swift */; };
-		D82D7985226CF4E50058B235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D7984226CF4E50058B235 /* ViewController.swift */; };
 		D82D7988226CF4E50058B235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82D7986226CF4E50058B235 /* Main.storyboard */; };
 		D82D798A226CF4E80058B235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82D7989226CF4E80058B235 /* Assets.xcassets */; };
 		D82D798D226CF4E80058B235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82D798B226CF4E80058B235 /* LaunchScreen.storyboard */; };
 		D82D7998226CF4E80058B235 /* SampleHLSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D7997226CF4E80058B235 /* SampleHLSAppTests.swift */; };
+		D82D79A4226CF6600058B235 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79A3226CF6600058B235 /* MainTableViewController.swift */; };
+		D82D79A6226CF68A0058B235 /* SkinnyStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79A5226CF68A0058B235 /* SkinnyStream.swift */; };
+		D82D79A8226CF6EE0058B235 /* StreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79A7226CF6EE0058B235 /* StreamViewModel.swift */; };
+		D82D79AA226CF7830058B235 /* StreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79A9226CF7830058B235 /* StreamTableViewCell.swift */; };
+		D82D79AC226CFA380058B235 /* StreamModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79AB226CFA380058B235 /* StreamModelController.swift */; };
+		D82D79B5226D0A510058B235 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79B4226D0A510058B235 /* PlayerViewController.swift */; };
+		D82D79B7226D0F6F0058B235 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79B6226D0F6F0058B235 /* PlayerView.swift */; };
+		D82D79B9226D19470058B235 /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79B8226D19470058B235 /* PlayerControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,6 @@
 /* Begin PBXFileReference section */
 		D82D797F226CF4E50058B235 /* SampleHLSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleHLSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82D7982226CF4E50058B235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D82D7984226CF4E50058B235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D82D7987226CF4E50058B235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D82D7989226CF4E80058B235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D82D798C226CF4E80058B235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,14 @@
 		D82D7993226CF4E80058B235 /* SampleHLSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleHLSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82D7997226CF4E80058B235 /* SampleHLSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHLSAppTests.swift; sourceTree = "<group>"; };
 		D82D7999226CF4E80058B235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82D79A3226CF6600058B235 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		D82D79A5226CF68A0058B235 /* SkinnyStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinnyStream.swift; sourceTree = "<group>"; };
+		D82D79A7226CF6EE0058B235 /* StreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewModel.swift; sourceTree = "<group>"; };
+		D82D79A9226CF7830058B235 /* StreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamTableViewCell.swift; sourceTree = "<group>"; };
+		D82D79AB226CFA380058B235 /* StreamModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamModelController.swift; sourceTree = "<group>"; };
+		D82D79B4226D0A510058B235 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		D82D79B6226D0F6F0058B235 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		D82D79B8226D19470058B235 /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				D82D7982226CF4E50058B235 /* AppDelegate.swift */,
-				D82D7984226CF4E50058B235 /* ViewController.swift */,
-				D82D7986226CF4E50058B235 /* Main.storyboard */,
-				D82D7989226CF4E80058B235 /* Assets.xcassets */,
-				D82D798B226CF4E80058B235 /* LaunchScreen.storyboard */,
-				D82D798E226CF4E80058B235 /* Info.plist */,
+				D82D79AD226D09750058B235 /* ViewControllers */,
+				D82D79AE226D097F0058B235 /* Models */,
+				D82D79B0226D09920058B235 /* ModelControllers */,
+				D82D79B1226D099E0058B235 /* Views */,
+				D82D79AF226D09860058B235 /* ViewModels */,
+				D82D79A2226CF5000058B235 /* Resources */,
 			);
 			path = SampleHLSApp;
 			sourceTree = "<group>";
@@ -94,6 +109,60 @@
 				D82D7999226CF4E80058B235 /* Info.plist */,
 			);
 			path = SampleHLSAppTests;
+			sourceTree = "<group>";
+		};
+		D82D79A2226CF5000058B235 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D82D7986226CF4E50058B235 /* Main.storyboard */,
+				D82D7989226CF4E80058B235 /* Assets.xcassets */,
+				D82D798B226CF4E80058B235 /* LaunchScreen.storyboard */,
+				D82D798E226CF4E80058B235 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D82D79AD226D09750058B235 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D82D79A3226CF6600058B235 /* MainTableViewController.swift */,
+				D82D79B4226D0A510058B235 /* PlayerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D82D79AE226D097F0058B235 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D82D79A5226CF68A0058B235 /* SkinnyStream.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D82D79AF226D09860058B235 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D82D79A7226CF6EE0058B235 /* StreamViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D82D79B0226D09920058B235 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D82D79AB226CFA380058B235 /* StreamModelController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		D82D79B1226D099E0058B235 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D82D79A9226CF7830058B235 /* StreamTableViewCell.swift */,
+				D82D79B6226D0F6F0058B235 /* PlayerView.swift */,
+				D82D79B8226D19470058B235 /* PlayerControlsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D82D7985226CF4E50058B235 /* ViewController.swift in Sources */,
+				D82D79A4226CF6600058B235 /* MainTableViewController.swift in Sources */,
+				D82D79A6226CF68A0058B235 /* SkinnyStream.swift in Sources */,
+				D82D79A8226CF6EE0058B235 /* StreamViewModel.swift in Sources */,
+				D82D79B7226D0F6F0058B235 /* PlayerView.swift in Sources */,
+				D82D79B5226D0A510058B235 /* PlayerViewController.swift in Sources */,
+				D82D79B9226D19470058B235 /* PlayerControlsView.swift in Sources */,
+				D82D79AC226CFA380058B235 /* StreamModelController.swift in Sources */,
+				D82D79AA226CF7830058B235 /* StreamTableViewCell.swift in Sources */,
 				D82D7983226CF4E50058B235 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53BVAZ8K9G;
-				INFOPLIST_FILE = SampleHLSApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SampleHLSApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53BVAZ8K9G;
-				INFOPLIST_FILE = SampleHLSApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SampleHLSApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
