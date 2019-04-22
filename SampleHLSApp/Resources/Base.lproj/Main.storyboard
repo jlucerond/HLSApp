@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b6T-CY-QRF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sZX-hc-dTi">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Table View Controller-->
+        <!--HTTP Live Streaming-->
         <scene sceneID="MDZ-Os-k7w">
             <objects>
                 <tableViewController id="b6T-CY-QRF" customClass="MainTableViewController" customModule="SampleHLSApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,10 +62,11 @@
                             <outlet property="delegate" destination="b6T-CY-QRF" id="6os-5h-Rdy"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="HTTP Live Streaming" id="396-7V-o0h"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSe-GL-PFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247.82608695652175" y="110.49107142857143"/>
+            <point key="canvasLocation" x="1157.9710144927537" y="110.49107142857143"/>
         </scene>
         <!--Player View Controller-->
         <scene sceneID="Psz-9b-Uq7">
@@ -94,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gG-YB-fYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1228.985507246377" y="109.82142857142857"/>
+            <point key="canvasLocation" x="2139.130434782609" y="109.82142857142857"/>
         </scene>
         <!--Player Controls View Controller-->
         <scene sceneID="Imm-VY-Wal">
@@ -174,7 +175,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRb-Q9-Xto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2144" y="103"/>
+            <point key="canvasLocation" x="3053.6231884057975" y="102.45535714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bc5-mO-Eoy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sZX-hc-dTi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="PB9-wV-V0h">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b6T-CY-QRF" kind="relationship" relationship="rootViewController" id="oAo-Ab-6F9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pam-bB-P5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247.82608695652175" y="110.49107142857143"/>
         </scene>
     </scenes>
     <resources>

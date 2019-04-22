@@ -14,7 +14,7 @@ class PlayerViewController: UIViewController {
     private var playerControlsVC: PlayerControlsViewController?
     private var dimmingAnimationTime: TimeInterval = 1.5
     private var isTimeRemainingLabelSet: Bool = false
-    private var timeSinceUserInteraction: TimeInterval = 0
+    private var timeSinceUserInteraction: TimeInterval = 2
 
     var timeObserverToken: Any?
     lazy var formatter: DateComponentsFormatter = {
