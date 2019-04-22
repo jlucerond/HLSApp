@@ -45,7 +45,7 @@ class MainTableViewController: UITableViewController {
             indexPath.row < streams.count,
             let playerVC = segue.destination as? PlayerViewController {
             let selectedStream = streams[indexPath.row]
-            playerVC.setUpWith(skinnyStream: selectedStream.stream)
+            playerVC.setUpPlayerWith(skinnyStream: selectedStream.stream)
         }
     }
 }

@@ -19,7 +19,7 @@
 		D82D79AC226CFA380058B235 /* StreamModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79AB226CFA380058B235 /* StreamModelController.swift */; };
 		D82D79B5226D0A510058B235 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79B4226D0A510058B235 /* PlayerViewController.swift */; };
 		D82D79B7226D0F6F0058B235 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79B6226D0F6F0058B235 /* PlayerView.swift */; };
-		D82D79B9226D19470058B235 /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79B8226D19470058B235 /* PlayerControlsView.swift */; };
+		D82D79B9226D19470058B235 /* PlayerControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D79B8226D19470058B235 /* PlayerControlsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 		D82D79AB226CFA380058B235 /* StreamModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamModelController.swift; sourceTree = "<group>"; };
 		D82D79B4226D0A510058B235 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		D82D79B6226D0F6F0058B235 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		D82D79B8226D19470058B235 /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
+		D82D79B8226D19470058B235 /* PlayerControlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +127,7 @@
 			children = (
 				D82D79A3226CF6600058B235 /* MainTableViewController.swift */,
 				D82D79B4226D0A510058B235 /* PlayerViewController.swift */,
+				D82D79B8226D19470058B235 /* PlayerControlsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,7 +161,6 @@
 			children = (
 				D82D79A9226CF7830058B235 /* StreamTableViewCell.swift */,
 				D82D79B6226D0F6F0058B235 /* PlayerView.swift */,
-				D82D79B8226D19470058B235 /* PlayerControlsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				D82D79A8226CF6EE0058B235 /* StreamViewModel.swift in Sources */,
 				D82D79B7226D0F6F0058B235 /* PlayerView.swift in Sources */,
 				D82D79B5226D0A510058B235 /* PlayerViewController.swift in Sources */,
-				D82D79B9226D19470058B235 /* PlayerControlsView.swift in Sources */,
+				D82D79B9226D19470058B235 /* PlayerControlsViewController.swift in Sources */,
 				D82D79AC226CFA380058B235 /* StreamModelController.swift in Sources */,
 				D82D79AA226CF7830058B235 /* StreamTableViewCell.swift in Sources */,
 				D82D7983226CF4E50058B235 /* AppDelegate.swift in Sources */,

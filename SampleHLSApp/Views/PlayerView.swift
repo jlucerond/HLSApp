@@ -14,7 +14,7 @@ class PlayerView: UIView {
         return AVPlayerLayer.self
     }
 
-    private var player: AVPlayer? {
+    var player: AVPlayer? {
         get {
             return playerLayer?.player
         }
@@ -27,6 +27,25 @@ class PlayerView: UIView {
         return layer as? AVPlayerLayer
     }
 
+    var isPlayerPaused: Bool {
+        return player?.rate == 0
+    }
+
+    var timeWatched: CMTime? {
+        return player?.currentTime()
+    }
+
+    var totalTime: CMTime? {
+        return player?.currentItem?.asset.duration
+    }
+
+    var percentComplete: Float? {
+        guard let timeWatched = timeWatched, let totalTime = totalTime else { return nil }
+        let timeWatchedAsFloat = Float(CMTimeGetSeconds(timeWatched))
+        let totalTimeAsFloat = Float(CMTimeGetSeconds(totalTime))
+        return timeWatchedAsFloat / totalTimeAsFloat
+    }
+
     func setUpWith(stream: SkinnyStream) {
         player = AVPlayer(url: stream.url)
     }
@@ -37,5 +56,14 @@ class PlayerView: UIView {
 
     func pause() {
         player?.pause()
+    }
+
+    func moveTo(percentCompleted: Double) {
+        guard let totalTime = totalTime, totalTime.isValid else { return }
+        let totalTimeAsDouble = Double(CMTimeGetSeconds(totalTime))
+        let timeToMoveToAsDouble = totalTimeAsDouble * percentCompleted
+        let timeScale = CMTimeScale(NSEC_PER_SEC)
+        let timeToSeek = CMTime(seconds: timeToMoveToAsDouble, preferredTimescale: timeScale)
+        player?.seek(to: timeToSeek)
     }
 }
